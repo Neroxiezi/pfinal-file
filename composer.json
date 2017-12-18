@@ -1,0 +1,34 @@
+{
+  "name": "nancheng/pfinal-file",
+  "description": "This is a package for the PHP file operation class",
+  "authors": [
+    {
+      "name": "南丞",
+      "email": "Lampxiezi@163.com",
+      "homepage": "http://friday-go.cc/"
+    }
+  ],
+  "homepage":"https://github.com/Neroxiezi/pfinal-file",
+  "license": "MIT",
+  "keywords": [
+    "pfinal",
+    "南丞",
+    "Q哥",
+    "file",
+    "php-file"
+  ],
+
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "pf\\file\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "example\\": "example"
+    }
+  }
+}
