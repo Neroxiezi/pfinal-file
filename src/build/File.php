@@ -138,4 +138,19 @@ trait File
             'dirname' => $pathinfo['dirname'],  // 文件保存目录
         );
     }
+
+    public function read_dir($dir){
+        $files=array();
+        $dir_list=scandir($dir);
+        foreach($dir_list as $file){
+            if($file!='..' && $file!='.'){
+                if(is_dir($dir.'/'.$file)){
+                    $files[]=$this->read_dir($dir.'/'.$file);
+                }else{
+                    $files[]=$file;
+                }
+            }
+        }
+        return $files;
+    }
 }
