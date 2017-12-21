@@ -1,6 +1,8 @@
 <?php
 namespace pf\file;
 
+use pf\arr\build\Base;
+
 class PFfile {
     protected $pf_array_link;
     protected function driver()
